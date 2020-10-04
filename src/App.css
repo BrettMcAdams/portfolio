@@ -143,6 +143,10 @@ a:hover {
   border-radius: 5%;
 }
 
+.about-text h2 {
+  font-family: cursive;
+}
+
 /*Scrolling text area*/
 
 section {
