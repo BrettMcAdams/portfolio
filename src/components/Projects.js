@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../projects.css";
 import Carousel from "react-elastic-carousel";
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,6 +9,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const useStyles = makeStyles({
   root: {
@@ -27,10 +29,15 @@ const breakPoints = [
 
 function Projects() {
   const classes = useStyles();
+
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  }, [])
+
   return (
     <>
       <Carousel breakPoints={breakPoints}>
-        <Card className={classes.root}>
+        <Card data-aos='flip-left' className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -57,7 +64,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card className={classes.root}>
+        <Card data-aos='flip-left' className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -84,7 +91,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card className={classes.root}>
+        <Card data-aos='flip-right' className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -112,7 +119,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card className={classes.root}>
+        <Card data-aos='flip-right' className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"

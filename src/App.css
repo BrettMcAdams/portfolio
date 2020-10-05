@@ -6,6 +6,26 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .App {
@@ -81,10 +101,34 @@ a:hover {
 .banner-area .header-text h2 {
   font-size: 4rem;
   color: lightgray;
+  -webkit-animation: fadeInDown 1.5s ease-in-out; /* Chrome, Safari, Opera */
+}
+
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(-40px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+  }
 }
 
 .banner-area .header-text p {
   width: 45%;
+  -webkit-animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+  }
 }
 
 .arrow {
@@ -147,6 +191,8 @@ a:hover {
 .about-text h2 {
   font-family: cursive;
 }
+
+
 
 /*Scrolling text area*/
 

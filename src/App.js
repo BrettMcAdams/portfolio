@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
@@ -7,17 +7,22 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Projects from './components/Projects'
 import Contact from './components/Contact'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
 
   const [react, setReact] = useState(false)
 
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  }, [])
+
   return (
     <div className="App">
       <div className="navbar">
         <a href="#" className="logo">
-          <a>B</a>
+          B
         </a>
         <ul className="nav">
           <li>
@@ -41,7 +46,7 @@ function App() {
           <h2>Full Stack Web Engineer.</h2>
           <p>
             I'm a software engineer based in Orlando, Fl specializing in
-            creating and designing exceptional, high-quility websites and
+            creating exceptional, high-quility websites and
             applications.
           </p>
           <div class="arrow bounce">
@@ -51,16 +56,16 @@ function App() {
       </div>
       <div className="about-area" id="about">
         <div className="about-text">
-          <h2>A little bit about me</h2>
-          <p>
+          <h2 data-aos='fade-down'>A little bit about me</h2>
+          <p data-aos='fade-up'>
             Hello! My name is Brett and I'm a software engineer who specializes
-            in front end development. I attended Lambda School in 2020 and
-            finished their Full Stack Web Development program. I aspire to work
+            in web development. I have been coding self taught for 2 years and in 2020 I attended Lambda School where I
+            completed their Full Stack Web program. I aspire to work
             for a company that will allow me to channel my appreciation for
-            beautiful and creative UI's that create amazing and engaging user
+            beautiful and interactive UI's that create amazing and engaging users
             experiences.
           </p>
-          <div className="links">
+          <div data-aos='fade' className="links">
             <a>
               <GitHubIcon style={{fontSize: 40}}/>
             </a>

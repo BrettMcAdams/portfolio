@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../contact.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function Contact() {
+
+  useEffect(() => {
+    Aos.init({duration: 1500})
+  }, [])
+
   return (
-    <div class="background">
+    <div data-aos='slide-left' class="background">
       <div class="container">
         <div class="screen">
           <div class="screen-header">
