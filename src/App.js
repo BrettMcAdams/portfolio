@@ -6,6 +6,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 
 function App() {
@@ -27,9 +28,6 @@ function App() {
           </li>
           <li>
             <a href="#portfolio">Projects</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -99,8 +97,9 @@ function App() {
       <div className="port-area" id="portfolio">
         <Projects />  
       </div>  
-      <div className="service-area" id="services"></div>
-      <div className="contact-area" id="contact"></div>
+      <div className="contact-area" id="contact">
+        <Contact />
+      </div>
     </div>
   );
 }
