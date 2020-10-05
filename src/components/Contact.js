@@ -32,7 +32,7 @@ function Contact() {
                   <input
                     class="app-form-control"
                     placeholder="NAME"
-                    value="Brett McAdams"
+                    name='name'
                   />
                 </div>
                 <div class="app-form-group">
