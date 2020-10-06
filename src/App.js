@@ -58,7 +58,7 @@ function App() {
         <div className="about-text">
           <h2 data-aos='fade-down'>A little bit about me</h2>
           <p data-aos='fade-up'>
-            Hello! My name is Brett and I'm a software engineer who specializes
+            Hello! I'm a software engineer who specializes
             in web development. I have been coding self-taught for 2 years and in 2020 I attended Lambda School where I
             completed their Full Stack Web program. I aspire to work
             for a company that will allow me to channel my appreciation for
