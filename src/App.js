@@ -59,20 +59,20 @@ function App() {
           <h2 data-aos='fade-down'>A little bit about me</h2>
           <p data-aos='fade-up'>
             Hello! My name is Brett and I'm a software engineer who specializes
-            in web development. I have been coding self taught for 2 years and in 2020 I attended Lambda School where I
+            in web development. I have been coding self-taught for 2 years and in 2020 I attended Lambda School where I
             completed their Full Stack Web program. I aspire to work
             for a company that will allow me to channel my appreciation for
             beautiful and interactive UI's that create amazing and engaging users
             experiences.
           </p>
           <div data-aos='fade' className="links">
-            <a>
+            <a href='https://github.com/BrettMcAdams' target="_blank">
               <GitHubIcon style={{fontSize: 40}}/>
             </a>
-            <a>
+            <a href='https://twitter.com/BrettMcAdams6' target="_blank">
               <TwitterIcon style={{fontSize: 40}} />
             </a>
-            <a>
+            <a href='https://www.linkedin.com/in/brett-mcadams-134ba91b5/' target="_blank">
               <LinkedInIcon style={{fontSize: 40}} />
             </a>
             <a>
@@ -83,18 +83,18 @@ function App() {
         <section>
           <div>
             <h2>
-              HTML5, CSS, Javascript, React/Redux, Node JS/Express, Python,
-              Firebase, HTML5, CSS, Javascript, React/Redux, Node JS/Express,
+              HTML5, CSS, Javascript, React/Redux, Node JS/Express, SQL, Python,
+              Firebase, HTML5, CSS, Javascript, React/Redux, Node JS/Express, SQL,
               Python, Firebase, HTML5, CSS, Javascript, React/Redux, Node
-              JS/Express, Python, Firebase
+              JS/Express, SQL, Python, Firebase
             </h2>
           </div>
           <div>
             <h2>
-              HTML5, CSS, Javascript, React/Redux, Node JS/Express, Python,
-              Firebase, HTML5, CSS, Javascript, React/Redux, Node JS/Express,
+              HTML5, CSS, Javascript, React/Redux, Node JS/Express, SQL, Python,
+              Firebase, HTML5, CSS, Javascript, React/Redux, Node JS/Express, SQL,
               Python, Firebase, HTML5, CSS, Javascript, React/Redux, Node
-              JS/Express, Python, Firebase
+              JS/Express, SQL, Python, Firebase
             </h2>
           </div>
         </section>

@@ -37,7 +37,7 @@ function Projects() {
   return (
     <>
       <Carousel breakPoints={breakPoints}>
-        <Card data-aos='flip-left' className={classes.root}>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} data-aos='flip-left' className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -64,7 +64,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card data-aos='flip-left' className={classes.root}>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} data-aos='flip-left' className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -91,8 +91,8 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card data-aos='flip-right' className={classes.root}>
-          <CardActionArea>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} data-aos='flip-right' className={classes.root}>
+          <CardActionArea style={{}}>
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
@@ -119,7 +119,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card data-aos='flip-right' className={classes.root}>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} data-aos='flip-right' className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -147,7 +147,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card className={classes.root}>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -175,7 +175,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card className={classes.root}>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -203,7 +203,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card className={classes.root}>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -231,7 +231,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card className={classes.root}>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -259,7 +259,7 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card className={classes.root}>
+        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
           <CardActionArea>
             <CardMedia
               component="img"

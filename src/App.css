@@ -52,6 +52,12 @@ html {
   margin-right: 2%;
 }
 
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
+
 .logo {
   margin-left: 5%;
   text-transform: uppercase;
