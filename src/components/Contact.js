@@ -10,7 +10,7 @@ function Contact() {
   }, [])
 
   return (
-    <div data-aos='slide-left' class="background">
+    <div data-aos='fade' class="background">
       <div class="container">
         <div class="screen">
           <div class="screen-header">

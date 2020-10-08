@@ -9,14 +9,15 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const useStyles = makeStyles({
   root: {
     height: 400,
     width: 445,
-    margin: '5%',
+    margin: "5%",
+    WebkitBoxShadow: 8,
   },
 });
 
@@ -31,13 +32,65 @@ function Projects() {
   const classes = useStyles();
 
   useEffect(() => {
-    Aos.init({duration: 1500})
-  }, [])
+    Aos.init({ duration: 1500 });
+  }, []);
 
   return (
     <>
-      <Carousel breakPoints={breakPoints}>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} data-aos='flip-left' className={classes.root}>
+      <h2>Technologies used</h2>
+      <div className="technology">
+        <img
+          className="techIcon"
+          src="https://img.icons8.com/dusk/64/000000/javascript.png"
+          alt='javascript icon'
+        />
+<img src="https://img.icons8.com/color/48/000000/html-filetype.png"/>
+        <img
+          className="techIcon"
+          src="https://img.icons8.com/color/48/000000/css-filetype.png"
+          alt='css icon'
+        />
+        <img
+          className="techIcon"
+          src="https://img.icons8.com/bubbles/50/000000/react.png"
+          alt='react icon'
+        />
+        <img
+          className="techIcon"
+          src="https://img.icons8.com/color/48/000000/redux.png"
+          alt='redux icon'
+        />
+        <img
+          className="techIcon"
+          src="https://img.icons8.com/dusk/64/000000/python.png"
+          alt='python icon'
+        />
+        <img
+          className="techIcon"
+          src="https://img.icons8.com/dusk/64/000000/sql.png"
+          alt='sql icon'
+        />
+        <img
+          className="techIcon"
+          src="https://img.icons8.com/color/48/000000/nodejs.png"
+          alt='node icon'
+        />
+        <img
+          className="techIcon"
+          src="https://img.icons8.com/color/48/000000/firebase.png"
+          alt='firebase icon'
+        />
+      </div>
+      <Carousel style={{ zIndex: 10 }} breakPoints={breakPoints}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          data-aos="flip-left"
+          className={classes.root}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -51,7 +104,10 @@ function Projects() {
                 Covid Tracker App
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                I really liked working on this project and with the amazing api provided by disease.sh that updates the app in realtime. I have an appreciation for applications that provide data in a clear and concise format to maximize user engagement.
+                I really liked working on this project and with the amazing api
+                provided by disease.sh that updates the app in realtime. I have
+                an appreciation for applications that provide data in a clear
+                and concise format to maximize user engagement.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -64,7 +120,15 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} data-aos='flip-left' className={classes.root}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          data-aos="flip-left"
+          className={classes.root}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -78,7 +142,11 @@ function Projects() {
                 Hulu Clone
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Hulu's UI in my opinion is one of the best in the market when it comes to streaming services. Everything is top tier, from the style of the individual components, to the smooth animations and transitions. It was a project i've been wanting to do for a while.
+                Hulu's UI in my opinion is one of the best in the market when it
+                comes to streaming services. Everything is top tier, from the
+                style of the individual components, to the smooth animations and
+                transitions. It was a project i've been wanting to do for a
+                while.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -91,7 +159,15 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} data-aos='flip-right' className={classes.root}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          data-aos="flip-right"
+          className={classes.root}
+        >
           <CardActionArea style={{}}>
             <CardMedia
               component="img"
@@ -119,7 +195,15 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} data-aos='flip-right' className={classes.root}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          data-aos="flip-right"
+          className={classes.root}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -147,7 +231,14 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          className={classes.root}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -175,7 +266,14 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          className={classes.root}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -203,7 +301,14 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          className={classes.root}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -231,7 +336,14 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          className={classes.root}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -259,7 +371,14 @@ function Projects() {
             </Button>
           </CardActions>
         </Card>
-        <Card style={{display: 'flex', justifyContent: 'space-between', flexDirection: 'column'}} className={classes.root}>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          className={classes.root}
+        >
           <CardActionArea>
             <CardMedia
               component="img"

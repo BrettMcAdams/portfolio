@@ -6,11 +6,11 @@ body, button, input {
   
   .background {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
   }
   
   .container {
-    flex: 0 1 700px;
+    flex: 0 1 900px;
     margin: auto;
     padding: 10px;
   }
@@ -19,6 +19,7 @@ body, button, input {
     position: relative;
     background: #3e3e3e;
     border-radius: 15px;
+    height: 400px;
   }
   
   .screen:after {
@@ -115,7 +116,7 @@ body, button, input {
   
   .app-contact {
     margin-top: auto;
-    font-size: 8px;
+    font-size: 12px;
     color: #888;
   }
   
@@ -222,6 +223,9 @@ body, button, input {
   
     .screen-body-item {
       padding: 0;
+    }
+    .screen {
+      height: 470px;
     }
   }
   
