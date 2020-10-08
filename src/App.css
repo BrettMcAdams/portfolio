@@ -449,6 +449,7 @@ section {
 }
 
 section div {
+  position: relative;
   width: 50%;
   background: rgb(45, 45, 45);
   overflow: hidden;
