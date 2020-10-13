@@ -404,7 +404,7 @@ a:hover {
   border-radius: 50%;
   border: 1px solid black;
   box-shadow: #555;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 900px) {
@@ -413,15 +413,15 @@ a:hover {
     display: none;
   }
   .about-text p {
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 15px;
     width: 85%;
   }
   .me {
     height: 40%;
-    width: 35%;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .about-text h2 {
     display: none;

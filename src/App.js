@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import portrait from './images/portrait.png'
+import portrait from "./images/portrait.png";
 
 function App() {
   const [inputCheck, setInputCheck] = useState(false);
@@ -84,21 +84,29 @@ function App() {
       </div>
       <div className="banner-area" id="home">
         <div className="header-text">
-        <div className="links">
+          <div className="links">
             <a href="https://github.com/BrettMcAdams" target="_blank">
-              <GitHubIcon style={{ fontSize: 40, color: 'rgb(57, 254, 188)' }} />
+              <GitHubIcon
+                style={{ fontSize: 40, color: "rgb(57, 254, 188)" }}
+              />
             </a>
             <a href="https://twitter.com/BrettMcAdams6" target="_blank">
-              <TwitterIcon style={{ fontSize: 40, color: 'rgb(57, 254, 188)' }} />
+              <TwitterIcon
+                style={{ fontSize: 40, color: "rgb(57, 254, 188)" }}
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/brett-mcadams-134ba91b5/"
               target="_blank"
             >
-              <LinkedInIcon style={{ fontSize: 40, color: 'rgb(57, 254, 188)' }} />
+              <LinkedInIcon
+                style={{ fontSize: 40, color: "rgb(57, 254, 188)" }}
+              />
             </a>
-            <a href=''>
-              <InstagramIcon style={{ fontSize: 40, color: 'rgb(57, 254, 188)' }} />
+            <a href="">
+              <InstagramIcon
+                style={{ fontSize: 40, color: "rgb(57, 254, 188)" }}
+              />
             </a>
           </div>
           <h3>Hi, my name is</h3>
@@ -118,37 +126,44 @@ function App() {
       </div>
       <div className="about-area" id="about">
         <div className="about-text">
-          <img data-aos="fade-up" className='me' src={portrait} />
+          <img data-aos="fade-up" className="me" src={portrait} />
           <p data-aos="fade-up">
-            I'm a software engineer who specializes in web development. I have been coding for 2+ years and am endorsed by Lambda School. I
-            aspire to work for a company that will allow me to channel my
-            appreciation for beautiful and interactive UI's that create amazing
-            and engaging user experiences.
+            I specialize in creating beautiful, useable, and professional
+            websites using best practice accessibility. I have been coding for 2
+            years and attended Lambda School in 2020 to further advance my
+            technical skills. I enjoy building everything from small business
+            websites to rich interactive web applications. I aspire to work for
+            a company that will allow me to channel my appreciation for
+            beautiful and interactive UI's that create amazing and engaging user
+            experiences.
           </p>
         </div>
         <section>
           <div>
             <h2>
-              HTML5, CSS, Javascript, React/Redux, Node JS/Express, SQL, Python,
+              HTML5, CSS, Javascript, React/Redux, Node JS/Express, SQL,
               Firebase, HTML5, CSS, Javascript, React/Redux, Node JS/Express,
-              SQL, Python, Firebase, HTML5, CSS, Javascript, React/Redux, Node
-              JS/Express, SQL, Python, Firebase
+              SQL, Firebase, HTML5, CSS, Javascript, React/Redux, Node
+              JS/Express, SQL, Firebase, HTML5, CSS, Javascript, React/Redux,
+              Node JS/Express, SQL, Firebase, HTML5, CSS, Javascript,
+              React/Redux, Node JS/Express, SQL, Firebase
             </h2>
           </div>
           <div>
             <h2>
-              HTML5, CSS, Javascript, React/Redux, Node JS/Express, SQL, Python,
+              HTML5, CSS, Javascript, React/Redux, Node JS/Express, SQL,
               Firebase, HTML5, CSS, Javascript, React/Redux, Node JS/Express,
-              SQL, Python, Firebase, HTML5, CSS, Javascript, React/Redux, Node
-              JS/Express, SQL, Python, Firebase
+              SQL, Firebase, HTML5, CSS, Javascript, React/Redux, Node
+              JS/Express, SQL, Firebase, HTML5, CSS, Javascript, React/Redux,
+              Node JS/Express, SQL, Firebase, HTML5, CSS, Javascript,
+              React/Redux, Node JS/Express, SQL, Firebase
             </h2>
           </div>
         </section>
       </div>
       <div className="port-area" id="portfolio">
         <Projects />
-        <div>
-        </div>
+        <div></div>
       </div>
       <div className="contact-area" id="contact">
         <Contact />
