@@ -11,10 +11,12 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import covid from '../images/Covid.jpg'
+import reboot from '../images/Reboot.jpg'
 
 const useStyles = makeStyles({
   root: {
-    height: 400,
+    height: 450,
     width: 445,
     margin: "5%",
     WebkitBoxShadow: 8,
@@ -95,8 +97,8 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Covid Tracker App"
-              height="140"
-              image="https://www.arklatexhomepage.com/wp-content/uploads/sites/5/2020/03/global-COVID19-tracker.jpg"
+              height="c"
+              image={covid}
               title="Contemplative Reptile"
             />
             <CardContent>
@@ -112,10 +114,10 @@ function Projects() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button target='_blank' href='https://myworldcovidtracker.netlify.app/' size="small" color="primary">
               View live
             </Button>
-            <Button size="small" color="primary">
+            <Button target='_blank' href='https://github.com/BrettMcAdams/covid-tracker' size="small" color="primary">
               View on Github
             </Button>
           </CardActions>
@@ -133,7 +135,7 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Hulu clone"
-              height="140"
+              height="200"
               image="https://cdn.vox-cdn.com/thumbor/HPt3pz12wMNLfXbqMsZc7c13CWA=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19989441/hulu.jpg"
               title="Hulu clone"
             />
@@ -172,7 +174,7 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="140"
+              height="200"
               image="https://i.pinimg.com/736x/07/94/2f/07942fd499b5ba05edd3bb821f11dc0f.jpg"
               title="Contemplative Reptile"
             />
@@ -208,13 +210,13 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="140"
-              image="https://slack.zendesk.com/hc/article_attachments/360067816494/image__8_.png"
+              height="200"
+              image={reboot}
               title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Live messenger app
+                Reboot Live Chat
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
                 Lizards are a widespread group of squamate reptiles, with over
@@ -223,10 +225,10 @@ function Projects() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button target='_blank' href='https://rebootchat.netlify.app/' size="small" color="primary">
               View live
             </Button>
-            <Button size="small" color="primary">
+            <Button target='_blank' href='https://github.com/BrettMcAdams/Reboot' size="small" color="primary">
               view on github
             </Button>
           </CardActions>
@@ -243,7 +245,7 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="140"
+              height="200"
               image="/static/images/cards/contemplative-reptile.jpg"
               title="Contemplative Reptile"
             />
@@ -278,7 +280,7 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="140"
+              height="200"
               image="/static/images/cards/contemplative-reptile.jpg"
               title="Contemplative Reptile"
             />
@@ -313,7 +315,7 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="140"
+              height="200"
               image="/static/images/cards/contemplative-reptile.jpg"
               title="Contemplative Reptile"
             />
@@ -348,7 +350,7 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="140"
+              height="200"
               image="/static/images/cards/contemplative-reptile.jpg"
               title="Contemplative Reptile"
             />
@@ -383,7 +385,7 @@ function Projects() {
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
-              height="140"
+              height="200"
               image="/static/images/cards/contemplative-reptile.jpg"
               title="Contemplative Reptile"
             />
