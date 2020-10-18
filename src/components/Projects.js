@@ -11,14 +11,17 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import covid from '../images/Covid.jpg'
-import reboot from '../images/Reboot.jpg'
+import covid from "../images/Covid.jpg";
+import reboot from "../images/Reboot.jpg";
+import swift from "../images/swiftsearch.jpg";
+import amazon from "../images/amazonclone.jpg";
+import cheddar from "../images/cheddar.jpg";
 
 const useStyles = makeStyles({
   root: {
-    height: 450,
-    width: 445,
-    margin: "5%",
+    height: 420,
+    width: 450,
+    margin: "4%",
     WebkitBoxShadow: 8,
   },
 });
@@ -39,48 +42,48 @@ function Projects() {
 
   return (
     <>
-      <h2>Technologies used</h2>
+      <h2 className="tech">Technologies used</h2>
       <div className="technology">
         <img
           className="techIcon"
           src="https://img.icons8.com/dusk/64/000000/javascript.png"
-          alt='javascript icon'
+          alt="javascript icon"
         />
-<img src="https://img.icons8.com/color/48/000000/html-filetype.png"/>
+        <img src="https://img.icons8.com/color/48/000000/html-filetype.png" />
         <img
           className="techIcon"
           src="https://img.icons8.com/color/48/000000/css-filetype.png"
-          alt='css icon'
+          alt="css icon"
         />
         <img
           className="techIcon"
           src="https://img.icons8.com/bubbles/50/000000/react.png"
-          alt='react icon'
+          alt="react icon"
         />
         <img
           className="techIcon"
           src="https://img.icons8.com/color/48/000000/redux.png"
-          alt='redux icon'
+          alt="redux icon"
         />
         <img
           className="techIcon"
           src="https://img.icons8.com/dusk/64/000000/python.png"
-          alt='python icon'
+          alt="python icon"
         />
         <img
           className="techIcon"
           src="https://img.icons8.com/dusk/64/000000/sql.png"
-          alt='sql icon'
+          alt="sql icon"
         />
         <img
           className="techIcon"
           src="https://img.icons8.com/color/48/000000/nodejs.png"
-          alt='node icon'
+          alt="node icon"
         />
         <img
           className="techIcon"
           src="https://img.icons8.com/color/48/000000/firebase.png"
-          alt='firebase icon'
+          alt="firebase icon"
         />
       </div>
       <Carousel style={{ zIndex: 10 }} breakPoints={breakPoints}>
@@ -93,31 +96,103 @@ function Projects() {
           data-aos="flip-left"
           className={classes.root}
         >
-          <CardActionArea>
+          <CardActionArea style={{ height: "100%" }}>
+            <CardMedia
+              component="img"
+              alt="Contemplative Reptile"
+              height="200"
+              image={cheddar}
+              title="Contemplative Reptile"
+              style={{ objectFit: "fill" }}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                Cheddar Banking
+              </Typography>
+              <Typography variant="p" color="textSecondary" component="p">
+                Tech stack: React, Firebase, Node JS, Redux
+              </Typography>
+              <Typography
+                style={{ paddingTop: "15px" }}
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                Cheddar is an online banking platform with it's main focus
+                revolving around reducing expenses and increasing revenue.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button
+              target="_blank"
+              href="https://cheddarbank.netlify.app/"
+              size="small"
+              color="primary"
+            >
+              View live
+            </Button>
+            <Button
+              target="_blank"
+              href="https://github.com/BrettMcAdams/cheddar-bank"
+              size="small"
+              color="primary"
+            >
+              View on github
+            </Button>
+          </CardActions>
+        </Card>
+        <Card
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+          }}
+          data-aos="flip-left"
+          className={classes.root}
+        >
+          <CardActionArea style={{ height: "100%" }}>
             <CardMedia
               component="img"
               alt="Covid Tracker App"
-              height="c"
+              height="200"
               image={covid}
               title="Contemplative Reptile"
+              style={{ objectFit: "fill" }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 Covid Tracker App
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                I really liked working on this project and with the amazing api
-                provided by disease.sh that updates the app in realtime. I have
-                an appreciation for applications that provide data in a clear
-                and concise format to maximize user engagement.
+              <Typography variant="p" color="textSecondary" component="p">
+                Tech stack: React, Material-ui, Leaflet
+              </Typography>
+              <Typography
+                style={{ paddingTop: "15px" }}
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                Covid tracker with interactive real time data display. Data is
+                provided by the disease.sh api.
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button target='_blank' href='https://myworldcovidtracker.netlify.app/' size="small" color="primary">
+            <Button
+              target="_blank"
+              href="https://myworldcovidtracker.netlify.app/"
+              size="small"
+              color="primary"
+            >
               View live
             </Button>
-            <Button target='_blank' href='https://github.com/BrettMcAdams/covid-tracker' size="small" color="primary">
+            <Button
+              target="_blank"
+              href="https://github.com/BrettMcAdams/covid-tracker"
+              size="small"
+              color="primary"
+            >
               View on Github
             </Button>
           </CardActions>
@@ -131,32 +206,48 @@ function Projects() {
           data-aos="flip-left"
           className={classes.root}
         >
-          <CardActionArea>
+          <CardActionArea style={{ height: "100%" }}>
             <CardMedia
               component="img"
-              alt="Hulu clone"
+              alt="Swift search"
               height="200"
-              image="https://cdn.vox-cdn.com/thumbor/HPt3pz12wMNLfXbqMsZc7c13CWA=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19989441/hulu.jpg"
+              image={swift}
               title="Hulu clone"
+              style={{ objectFit: "fill" }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Hulu Clone
+                Swift Search
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Hulu's UI in my opinion is one of the best in the market when it
-                comes to streaming services. Everything is top tier, from the
-                style of the individual components, to the smooth animations and
-                transitions. It was a project i've been wanting to do for a
-                while.
+              <Typography variant="p" color="textSecondary" component="p">
+                Tech stack: React, Firebase, Context API
+              </Typography>
+              <Typography
+                style={{ paddingTop: "15px" }}
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                Swift is a powerful search engine powered by Googles search api
+                that lets you explore anythiing on the web.
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button
+              target="_blank"
+              href="https://github.com/BrettMcAdams/covid-tracker"
+              size="small"
+              color="primary"
+            >
               View live
             </Button>
-            <Button size="small" color="primary">
+            <Button
+              target="_blank"
+              href="https://github.com/BrettMcAdams/covid-tracker"
+              size="small"
+              color="primary"
+            >
               view on github
             </Button>
           </CardActions>
@@ -170,29 +261,47 @@ function Projects() {
           data-aos="flip-right"
           className={classes.root}
         >
-          <CardActionArea style={{}}>
+          <CardActionArea style={{ height: "100%" }}>
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
               height="200"
-              image="https://i.pinimg.com/736x/07/94/2f/07942fd499b5ba05edd3bb821f11dc0f.jpg"
+              image={amazon}
               title="Contemplative Reptile"
+              style={{ objectFit: "fill" }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Tik Tok Clone
+                Amazon Clone
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+              <Typography variant="p" color="textSecondary" component="p">
+                Tech stack: React, Firebase, Context Api
+              </Typography>
+              <Typography
+                style={{ paddingTop: "15px" }}
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                Full amazon clone with user authentication and checkout ability.
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button
+              target="_blank"
+              href="https://github.com/BrettMcAdams/covid-tracker"
+              size="small"
+              color="primary"
+            >
               View live
             </Button>
-            <Button size="small" color="primary">
+            <Button
+              target="_blank"
+              href="https://github.com/BrettMcAdams/covid-tracker"
+              size="small"
+              color="primary"
+            >
               view on github
             </Button>
           </CardActions>
@@ -206,29 +315,48 @@ function Projects() {
           data-aos="flip-right"
           className={classes.root}
         >
-          <CardActionArea>
+          <CardActionArea style={{ height: "100%" }}>
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
               height="200"
               image={reboot}
               title="Contemplative Reptile"
+              style={{ objectFit: "fill" }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 Reboot Live Chat
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+              <Typography variant="p" color="textSecondary" component="p">
+                Tech stack: React, Redux, Firebase, Material-ui
+              </Typography>
+              <Typography
+                style={{ paddingTop: "15px" }}
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                Reboot is a chat app where you and you friends can discuss
+                different topics based on which channel your in.
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button target='_blank' href='https://rebootchat.netlify.app/' size="small" color="primary">
+            <Button
+              target="_blank"
+              href="https://rebootchat.netlify.app/"
+              size="small"
+              color="primary"
+            >
               View live
             </Button>
-            <Button target='_blank' href='https://github.com/BrettMcAdams/Reboot' size="small" color="primary">
+            <Button
+              target="_blank"
+              href="https://github.com/BrettMcAdams/Reboot"
+              size="small"
+              color="primary"
+            >
               view on github
             </Button>
           </CardActions>
@@ -241,7 +369,7 @@ function Projects() {
           }}
           className={classes.root}
         >
-          <CardActionArea>
+          <CardActionArea style={{ height: "100%" }}>
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
@@ -276,7 +404,7 @@ function Projects() {
           }}
           className={classes.root}
         >
-          <CardActionArea>
+          <CardActionArea style={{ height: "100%" }}>
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
@@ -311,7 +439,7 @@ function Projects() {
           }}
           className={classes.root}
         >
-          <CardActionArea>
+          <CardActionArea style={{ height: "100%" }}>
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
@@ -346,42 +474,7 @@ function Projects() {
           }}
           className={classes.root}
         >
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="200"
-              image="/static/images/cards/contemplative-reptile.jpg"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Tik Tok Clone
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              View live
-            </Button>
-            <Button size="small" color="primary">
-              view on github
-            </Button>
-          </CardActions>
-        </Card>
-        <Card
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            flexDirection: "column",
-          }}
-          className={classes.root}
-        >
-          <CardActionArea>
+          <CardActionArea style={{ height: "100%" }}>
             <CardMedia
               component="img"
               alt="Contemplative Reptile"
