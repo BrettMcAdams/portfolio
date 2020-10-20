@@ -165,7 +165,7 @@ function Projects() {
                 Covid Tracker App
               </Typography>
               <Typography variant="p" color="textSecondary" component="p">
-                Tech stack: React, Material-ui, Leaflet
+                Tech stack: React, Material-ui, Leaflet, React Charts
               </Typography>
               <Typography
                 style={{ paddingTop: "15px" }}
@@ -174,7 +174,7 @@ function Projects() {
                 component="p"
               >
                 Covid tracker with interactive real time data display. Data is
-                provided by the disease.sh api.
+                provided by the amazing disease.sh api.
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -236,7 +236,7 @@ function Projects() {
           <CardActions>
             <Button
               target="_blank"
-              href="https://github.com/BrettMcAdams/covid-tracker"
+              href="https://swiftsearch.netlify.app/"
               size="small"
               color="primary"
             >
@@ -244,7 +244,7 @@ function Projects() {
             </Button>
             <Button
               target="_blank"
-              href="https://github.com/BrettMcAdams/covid-tracker"
+              href="https://github.com/BrettMcAdams/swift"
               size="small"
               color="primary"
             >
@@ -283,14 +283,14 @@ function Projects() {
                 color="textSecondary"
                 component="p"
               >
-                Full amazon clone with user authentication and checkout ability.
+                Full amazon clone with user authentication and checkout ability. Don't buy anything though, the TOS is fake...
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
             <Button
               target="_blank"
-              href="https://github.com/BrettMcAdams/covid-tracker"
+              href="https://ecommerceclone.netlify.app/"
               size="small"
               color="primary"
             >
@@ -298,7 +298,7 @@ function Projects() {
             </Button>
             <Button
               target="_blank"
-              href="https://github.com/BrettMcAdams/covid-tracker"
+              href="https://github.com/BrettMcAdams/amazon-clone"
               size="small"
               color="primary"
             >

@@ -47,7 +47,7 @@ function App() {
             type="checkbox"
             class="toggler"
             checked={inputCheck}
-            onClick={click}
+            onClick={() => setInputCheck(!inputCheck)}
           />
           <div class="hamburger">
             <div></div>
